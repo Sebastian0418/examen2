@@ -1,0 +1,34 @@
+body{
+    background-color: rgb(194, 179, 115);  /*El elemento da color a el fondo del documento*/
+    padding: 50px;   /*Ajustar el margen del documento*/
+    }
+    .galeria {       /*Estilo de la clase galeria*/
+    display: flex;          /*Para que los elementos de la clase galeria se muestren en una línea*/
+    flex-grow: wrap;     /*Ajusta el contenido en líneas horizontales para que sean ajustadas en forma de cajas*/
+    justify-content:space-between;          /*Alinear los elementos en línea horizontalmente, con espaciado entre ellos*/
+    gap: 250px;          /*Espacio entre cada elemento en la línea*/
+    max-width: 1000px; /*Ancho máximo de la galería*/
+    margin: 0 auto; /*Centrar la galería en la página*/
+    }
+    .galeria img {  /*Estilo de las imágenes en la clase galeria*/
+    width: 23%; /*Tamaño de las imágenes en el galería*/
+    height: auto; /*Ajustar la altura de las imágenes en función del ancho*/
+    object-fit: cover; /*Ajustar el comportamiento de las imágenes al ajustar el tamaño al ancho*/
+    }
+    .galeria img {   /*Estilo de las imágenes en la clase galeria*/
+    border-radius: 30px; /*Redondear las esquinas de las imágenes*/
+    box-shadow: 30px 10px 10px black; /*Agregar sombreado a las imágenes*/
+    }
+    @media (max-width: 768px) {
+    .galeria img {
+    width: 48%;
+    height: auto;
+    margin-bottom: 20px;
+    }
+    }
+    @media (max-width: 480px) {
+    .galeria img {
+    width: 95%;
+    height: 40px;
+    }
+    }
